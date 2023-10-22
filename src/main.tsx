@@ -20,6 +20,7 @@ import { infuraProvider } from "wagmi/providers/infura";
 import App from "./controllers/AppController";
 import { isAppEnvDemo } from "./helpers";
 import { mockConnector } from "./helpers/mockConnector";
+import "@notifi-network/notifi-react-card/dist/index.css";
 
 // Increment with any schema change; e.g. adding support for a new content type
 const DB_VERSION = 3;

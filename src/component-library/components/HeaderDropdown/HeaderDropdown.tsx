@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { classNames } from "../../../helpers";
 import { IconButton } from "../IconButton/IconButton";
+import { Notifi } from "../Notifi/NotifiButton";
 
 interface HeaderDropdownProps {
   /**
@@ -79,6 +80,7 @@ export const HeaderDropdown = ({
             srText={t("aria_labels.start_new_message") || ""}
           />
         )}
+        <Notifi />
       </div>
 
       {!disabled && isOpen && (
